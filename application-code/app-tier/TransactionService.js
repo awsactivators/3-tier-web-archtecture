@@ -5,7 +5,8 @@ const con = mysql.createConnection({
     host: dbcreds.DB_HOST,
     user: dbcreds.DB_USER,
     password: dbcreds.DB_PWD,
-    database: dbcreds.DB_DATABASE
+    database: dbcreds.DB_DATABASE,
+    port: dbcreds.DB_PORT,
 });
 
 function addTransaction(amount,desc){
